@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from django.core.paginator import Paginator
 from django.shortcuts import render
+from rest_framework.response import Response
 
 
 class QueryPaginator:
@@ -26,6 +27,10 @@ class BaseModelListAPI(APIView, QueryPaginator):
     def get(self, request, *args, **kwargs):
         pagination = request.GET.get("pagination") or 25
         page_number = request.GET.get("page_number")
+
+        data = "mariaaaaaaaaaaaaaaaaa"
+
+        return Response({"data": data})
 
 
 class ModelListAPIView(BaseModelListAPI, AuthenticatedAPIView):
