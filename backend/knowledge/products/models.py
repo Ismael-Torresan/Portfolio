@@ -8,7 +8,7 @@ from company.models import Company
 CATEGORY_CHOICES = (
     ("Food", _("Food")),
     ("Car", _("Car")),
-    ("Clothe", _("Clothe")),
+    ("Material", _("Material")),
 )
 
 
@@ -24,6 +24,9 @@ class Product(models.Model):
         _("category"), max_length=25, blank=False, null=False, choices=CATEGORY_CHOICES
     )
     creation = models.DateTimeField(_("creation"), auto_now_add=True)
+
+    model_name = "product"
+    app_name = "product"
 
     class Meta:
         verbose_name = _("Product")

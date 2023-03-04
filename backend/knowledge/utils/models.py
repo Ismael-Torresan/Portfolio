@@ -4,6 +4,10 @@ from rest_framework.permissions import IsAuthenticated
 from django.core.paginator import Paginator
 from django.shortcuts import render
 from rest_framework.response import Response
+from products.models import Product
+from company.models import Company
+from rest_framework import serializers, generics
+from rest_framework.renderers import JSONRenderer
 
 
 class QueryPaginator:
@@ -14,23 +18,27 @@ class QueryPaginator:
         return render(data, "list.html", {"page_obj": page_obj})
 
 
-class AuthenticatedAPIView(APIView):
+class AuthenticatedAPIView:
     permission_classes = IsAuthenticated
 
 
-class BaseModelListAPI(APIView, QueryPaginator):
-    model = None
-    app_name = None
-    model_name = None
-    fields = []
+class BaseModelListAPI(generics.ListCreateAPIView, QueryPaginator):
+    def list(self, request, *args, **kwargs):
+        id = kwargs.get("id")
 
-    def get(self, request, *args, **kwargs):
-        pagination = request.GET.get("pagination") or 25
-        page_number = request.GET.get("page_number")
+        if id:
+            queryset = self.filter_queryset(self.get_queryset().filter(pk=id))
+        else:
+            queryset = self.filter_queryset(self.get_queryset())
 
-        data = "mariaaaaaaaaaaaaaaaaa"
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
 
-        return Response({"data": data})
+        serializer = self.get_serializer(queryset, many=True)
+
+        return Response(serializer.data)
 
 
 class ModelListAPIView(BaseModelListAPI, AuthenticatedAPIView):
