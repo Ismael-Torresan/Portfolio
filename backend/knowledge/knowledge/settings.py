@@ -146,9 +146,9 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": False,
     "UPDATE_LAST_LOGIN": False,
     "ALGORITHM": "HS256",
-    "SIGNING_KEY": (
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4ODAxMjM3LCJpYXQiOjE2Nzc5MzcyMzcsImp0aSI6IjFlNzRjNmY2MDM4MzQzMTNhNmUzZWM1Y2U4OTQ4NDgxIiwidXNlcl9pZCI6MX0.guvbF80iinX13S3uRN3cTyY5k06eL10S55H32rbAkVo"
-    ),
+    # "SIGNING_KEY": (
+    #
+    # ),
     "VERIFYING_KEY": "",
     "AUDIENCE": None,
     "ISSUER": None,

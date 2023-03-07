@@ -25,9 +25,16 @@ class AuthenticatedAPIView:
 class BaseModelListAPI(generics.ListCreateAPIView, QueryPaginator):
     def list(self, request, *args, **kwargs):
         id = kwargs.get("id")
+        filters = request.GET.get("filter")
 
         if id:
             queryset = self.filter_queryset(self.get_queryset().filter(pk=id))
+        elif filters:
+            queryset = self.filter_queryset(self.get_queryset())
+            # TODO: add filter for any models
+            # queryset = self.filter_queryset(
+            #     self.get_queryset().filter(queryset__icontains=filters)
+            # )
         else:
             queryset = self.filter_queryset(self.get_queryset())
 
