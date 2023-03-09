@@ -12,25 +12,6 @@
   --white-color: #ffffff;
 }
 
-/* *,
-*::after,
-*::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-} */
-
-// html {
-//   box-sizing: border-box;
-// }
-
-// *,
-// *::before,
-// *::after {
-//   box-sizing: inherit;
-// }
-
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -43,9 +24,3 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
-/* * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-} */
