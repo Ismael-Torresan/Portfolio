@@ -48,6 +48,7 @@ const Header = () => {
         className="header-img"
       >
         <img src={profile} alt="profile" />
+
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}

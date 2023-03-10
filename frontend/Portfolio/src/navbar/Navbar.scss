@@ -14,14 +14,20 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 40rem;
+    height: 15rem;
+    mask-size: contain;
+    margin: -90px;
 
-    img {
-      width: 9rem;
-      // height: 1.5rem;
+    background: url("../../public/bg.png");
+    background-size: 325px;
 
-      @media screen and (min-width: 1500px) {
-        width: 14rem;
-      }
+    -webkit-mask-image: url("../../public/meulogo.png");
+    mask-image: url("../../public/meulogo.png");
+    mask-repeat: no-repeat;
+
+    @media screen and (min-width: 1500px) {
+      width: 14rem;
     }
   }
 
@@ -83,7 +89,7 @@
 
   div {
     position: fixed;
-    top: 3rem;
+    top: 4rem;
     bottom: 0;
     right: 0;
     z-index: 5;
