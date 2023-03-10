@@ -10,18 +10,17 @@
   position: fixed;
   z-index: 2;
 
-  navbar__logo {
+  .navbar__logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
     img {
-      width: 6rem;
-      height: 1.5rem;
+      width: 9rem;
+      // height: 1.5rem;
 
-      @media screen and (min-width: 2000px) {
-        width: 180px;
-        height: 40px;
+      @media screen and (min-width: 1500px) {
+        width: 14rem;
       }
     }
   }
