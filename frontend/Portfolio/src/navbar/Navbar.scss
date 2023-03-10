@@ -1,12 +1,11 @@
 .navbar {
-  // box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(3px);
+  background: rgba(220, 220, 200, 0.3);
+  // // backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   position: fixed;
   z-index: 2;
@@ -19,6 +18,11 @@
     img {
       width: 6rem;
       height: 1.5rem;
+
+      @media screen and (min-width: 2000px) {
+        width: 180px;
+        height: 40px;
+      }
     }
   }
 
@@ -31,6 +35,8 @@
     li {
       margin: 0 1rem;
       cursor: pointer;
+
+      flex-direction: column;
 
       div {
         width: 5px;
@@ -60,5 +66,68 @@
         }
       }
     }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+.navbar__menu {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  // margin: 0.5rem 1rem;
+
+  div {
+    position: fixed;
+    top: 3rem;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    padding: 1rem;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  // .list {
+  //   margin-top: 5rem;
+  // }
+  ul {
+    list-style: none;
+    // margin: 3rem;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    li {
+      margin: 0.7rem;
+      a {
+        color: var(--gray-color);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+    }
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    display: none;
   }
 }

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <nav className="navbar">
       <div className="navbar__logo">
@@ -16,6 +19,32 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+
+      <div className="navbar__menu">
+        {!toggleMenu ? (
+          <RxHamburgerMenu onClick={() => setToggleMenu(true)} />
+        ) : (
+          <>
+            <RxCross2 className="svg" onClick={() => setToggleMenu(false)} />
+            <motion.div
+              whileInView={{ x: [300, 0] }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+            >
+              <section className="list">
+                <ul>
+                  {["home", "about", "work", "skills", "contact"].map((i) => (
+                    <li key={i}>
+                      <a href="{i}" onClick={() => setToggleMenu(false)}>
+                        {i}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </motion.div>
+          </>
+        )}
+      </div>
     </nav>
   );
 };
