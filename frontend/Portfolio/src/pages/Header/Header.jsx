@@ -2,10 +2,11 @@ import React from "react";
 import "./Header.scss";
 import { motion } from "framer-motion";
 import circle from "../../images/circle.svg";
-import profile from "../../images/profile.png";
+import profile from "../../images/profile2.png";
 import sass from "../../images/sass.png";
 import python from "../../images/python.png";
 import react from "../../images/react.png";
+import Wrapper from "../component/Wrapper";
 
 const scale = {
   whileInView: {
@@ -22,7 +23,7 @@ const images = [python, react, sass];
 
 const Header = () => {
   return (
-    <div id="home" className="header flex">
+    <div className="header flex">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -30,7 +31,7 @@ const Header = () => {
       >
         <div className="header-badge">
           <div className="badge-cmp flex">
-            <span>wave emoji or whatever</span>
+            <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello, I am</p>
               <h1 className="head-text">Ismael</h1>
@@ -62,7 +63,7 @@ const Header = () => {
         whileInView={scale.whileInView}
         className="header-circles"
       >
-        {images.map((circle, index) => (
+        {images.map((circle) => (
           <div key={circle} className="circle-cmp flex">
             <img src={circle} alt="circle" />
           </div>
@@ -72,4 +73,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Wrapper(Header, "home");

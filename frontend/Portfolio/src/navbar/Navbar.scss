@@ -18,6 +18,7 @@
     height: 15rem;
     mask-size: contain;
     margin: -90px;
+    z-index: 1;
 
     background: url("../../public/bg.png");
     background-size: 325px;
@@ -26,9 +27,9 @@
     mask-image: url("../../public/meulogo.png");
     mask-repeat: no-repeat;
 
-    @media screen and (min-width: 1500px) {
-      width: 14rem;
-    }
+    // @media screen and (min-width: 1500px) {
+    //   width: 14rem;
+    // }
   }
 
   .navbar__links {
@@ -36,6 +37,7 @@
     flex: 1;
     justify-content: center;
     list-style-type: none;
+    z-index: 2;
 
     li {
       margin: 0 1rem;
@@ -94,12 +96,13 @@
     right: 0;
     z-index: 5;
     padding: 1rem;
-    width: 80%;
+    width: 70%;
     height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    background-color: rgba(220, 220, 200, 1);
   }
   // .list {
   //   margin-top: 5rem;

@@ -24,10 +24,14 @@ const Navbar = () => {
 
       <div className="navbar__menu">
         {!toggleMenu ? (
-          <RxHamburgerMenu onClick={() => setToggleMenu(true)} />
+          <RxHamburgerMenu size={30} onClick={() => setToggleMenu(true)} />
         ) : (
           <>
-            <RxCross2 className="svg" onClick={() => setToggleMenu(false)} />
+            <RxCross2
+              size={30}
+              className="svg"
+              onClick={() => setToggleMenu(false)}
+            />
             <motion.div
               whileInView={{ x: [300, 0] }}
               transition={{ duration: 0.7, ease: "easeOut" }}
@@ -36,7 +40,7 @@ const Navbar = () => {
                 <ul>
                   {["home", "about", "work", "skills", "contact"].map((i) => (
                     <li key={i}>
-                      <a href="{i}" onClick={() => setToggleMenu(false)}>
+                      <a href={i} onClick={() => setToggleMenu(false)}>
                         {i}
                       </a>
                     </li>
