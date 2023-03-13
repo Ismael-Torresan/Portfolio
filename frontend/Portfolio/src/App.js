@@ -20,6 +20,7 @@
 // export default App;
 
 import React from "react";
+import "./App.scss";
 
 import Navbar from "./navbar/Navbar";
 import About from "./pages/About/About";

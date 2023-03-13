@@ -12,7 +12,7 @@ const abouts = [
   { title: "Backend", description: "I am a good Developer.", imgUrl: git },
   { title: "Frontend", description: "I am a good Developer.", imgUrl: git },
   {
-    title: "web Developer",
+    title: "Manager",
     description: "I am a good Developer.",
     imgUrl: git,
   },
