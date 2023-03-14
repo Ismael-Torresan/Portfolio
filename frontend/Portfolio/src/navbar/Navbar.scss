@@ -4,10 +4,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(220, 220, 200, 0.3);
-  // // backdrop-filter: blur(3px);
+  background: rgba(220, 220, 200);
   border: 1px solid rgba(255, 255, 255, 0.15);
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 2;
 
   .navbar__logo {

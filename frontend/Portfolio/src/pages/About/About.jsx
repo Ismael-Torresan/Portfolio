@@ -21,7 +21,7 @@ const abouts = [
 const About = () => {
   return (
     <>
-      <h2 className="head-text">
+      <h2 id="about" className="head-text">
         <span>Good Deign is not my best</span>
       </h2>
       <div className="profiles">
@@ -47,4 +47,4 @@ const About = () => {
   );
 };
 
-export default Wrapper(About, "");
+export default Wrapper(About, "whitebg");

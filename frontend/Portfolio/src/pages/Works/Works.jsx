@@ -51,7 +51,7 @@ const Works = () => {
   console.log(filterWork);
 
   return (
-    <>
+    <div id="work">
       <h2 className="head-text">
         My Creative <span>Portfolio</span>
       </h2>
@@ -127,7 +127,7 @@ const Works = () => {
           </div>
         ))}
       </motion.div>
-    </>
+    </div>
   );
 };
 
