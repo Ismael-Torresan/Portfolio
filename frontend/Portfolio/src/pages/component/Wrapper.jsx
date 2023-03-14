@@ -10,7 +10,7 @@ const Wrapper = (Component, idName, classNames) =>
       <div
         id={idName}
         style={{ display: "flex", flexDirection: "column-reverse" }}
-        className={`container ${classNames ? classNames : "primarybg"}`}
+        className={`container ${classNames}`}
       >
         <Social />
         <div className="wrapper flex">

@@ -31,7 +31,7 @@ import Works from "./pages/Works/Works";
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Navbar />
       <Header />
       <About />

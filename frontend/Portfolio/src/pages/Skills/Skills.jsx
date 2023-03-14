@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import React from "react";
 import { motion } from "framer-motion";
 import { Tooltip } from "react-tooltip";
 import html from "../../images/html.png";
@@ -42,10 +41,7 @@ const Skills = () => {
               className="skills-item flex"
               key={skill.name}
             >
-              <div
-                className="flex"
-                // style={{ backgroundColor: skill.bgColor }}
-              >
+              <div className="flex primarybg">
                 <img src={skill.icon} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
@@ -54,7 +50,7 @@ const Skills = () => {
         </motion.div>
         <div className="skills-exp">
           {experiences?.map((experience) => (
-            <motion.div className="skills-exp-item" key={experience.year}>
+            <motion.div className="skills-exp-item" key={`${experience.year}`}>
               <div className="skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
               </div>
