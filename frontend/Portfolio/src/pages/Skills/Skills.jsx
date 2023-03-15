@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Tooltip } from "react-tooltip";
+// import { Tooltip } from "react-tooltip";
 import html from "../../images/html.png";
 
 import MotionWrapper from "../component/MotionWrapper";
@@ -68,14 +68,14 @@ const Skills = () => {
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
-                    <Tooltip
+                    <div
                       id={work.name}
                       effect="solid"
                       arrowColor="#fff"
                       className="skills-tooltip"
                     >
                       {work.description}
-                    </Tooltip>
+                    </div>
                   </>
                 ))}
               </motion.div>
