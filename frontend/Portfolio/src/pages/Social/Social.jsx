@@ -3,6 +3,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 
 const Social = () => {
+  return null;
   return (
     <div className="social">
       <div style={{ cursor: "pointer" }}>

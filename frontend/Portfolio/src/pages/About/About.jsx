@@ -2,6 +2,7 @@ import "./About.scss";
 import { motion } from "framer-motion";
 import git from "../../images/git.png";
 import Wrapper from "../component/Wrapper";
+import MotionWrapper from "../component/MotionWrapper";
 
 const abouts = [
   {
@@ -53,4 +54,4 @@ const About = () => {
   );
 };
 
-export default Wrapper(About, "whitebg");
+export default Wrapper(MotionWrapper(About, "about"), "about", "whitebg");

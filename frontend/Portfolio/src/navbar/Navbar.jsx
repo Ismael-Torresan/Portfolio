@@ -38,7 +38,7 @@ const Navbar = () => {
             >
               <section className="list">
                 <ul>
-                  {["home", "about", "work", "skills", "contact"].map((i) => (
+                  {["home", "about", "works", "skills", "contact"].map((i) => (
                     <li key={i}>
                       <a href={`#${i}`} onClick={() => setToggleMenu(false)}>
                         {i}

@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Tooltip } from "react-tooltip";
 import python from "../../images/python.png";
-import django from "../../images/django.png";
+// import django from "../../images/django.png";
 import javascript from "../../images/javascript.png";
 import react from "../../images/react.png";
 import html from "../../images/html.png";
@@ -15,7 +14,7 @@ import "./Skills.scss";
 const Skills = () => {
   const skills = [
     { name: "Python", icon: python },
-    { name: "Django", icon: django },
+    // { name: "Django", icon: django },
     { name: "JavaScript", icon: javascript },
     { name: "React", icon: react },
     { name: "Html5", icon: html },
