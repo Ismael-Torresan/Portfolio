@@ -1,14 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-<<<<<<< HEAD
-// import { Tooltip } from "react-tooltip";
-=======
 import { Tooltip } from "react-tooltip";
 import python from "../../images/python.png";
 import django from "../../images/django.png";
 import javascript from "../../images/javascript.png";
 import react from "../../images/react.png";
->>>>>>> 16074555d73048656fa2aaa14404dd0df1302227
 import html from "../../images/html.png";
 import sass from "../../images/sass.png";
 
