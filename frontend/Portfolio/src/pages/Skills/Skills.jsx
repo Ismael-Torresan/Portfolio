@@ -86,18 +86,7 @@ const Skills = () => {
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
-<<<<<<< HEAD
-                    <div
-                      id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
-                      className="skills-tooltip"
-                    >
-                      {work.description}
-                    </div>
-=======
                     <div id={work.name}>{work.description}</div>
->>>>>>> 16074555d73048656fa2aaa14404dd0df1302227
                   </>
                 ))}
               </motion.div>
