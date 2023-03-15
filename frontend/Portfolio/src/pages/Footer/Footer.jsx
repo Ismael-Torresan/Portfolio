@@ -46,7 +46,7 @@ const Footer = () => {
             <input
               className="p-text"
               type="text"
-              placeholder="Your Name"
+              placeholder="Name"
               name="username"
               value={username}
               onChange={handleChange}
@@ -56,7 +56,7 @@ const Footer = () => {
             <input
               className="p-text"
               type="email"
-              placeholder="Your Email"
+              placeholder="Email"
               name="email"
               value={email}
               onChange={handleChange}
@@ -65,7 +65,7 @@ const Footer = () => {
           <div>
             <textarea
               className="p-text"
-              placeholder="Your Message"
+              placeholder="Message"
               value={message}
               name="message"
               onChange={handleChange}
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for getting in touch!</h3>
+          <h4 className="head-text">Thank you for getting in touch!</h4>
         </div>
       )}
     </>

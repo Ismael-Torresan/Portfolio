@@ -1,7 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Tooltip } from "react-tooltip";
+import python from "../../images/python.png";
+import django from "../../images/django.png";
+import javascript from "../../images/javascript.png";
+import react from "../../images/react.png";
 import html from "../../images/html.png";
+import sass from "../../images/sass.png";
 
 import MotionWrapper from "../component/MotionWrapper";
 import Wrapper from "../component/Wrapper";
@@ -9,24 +14,37 @@ import "./Skills.scss";
 
 const Skills = () => {
   const skills = [
-    { name: "Name", icon: html },
-    { name: "second name", icon: html },
+    { name: "Python", icon: python },
+    { name: "Django", icon: django },
+    { name: "JavaScript", icon: javascript },
+    { name: "React", icon: react },
+    { name: "Html5", icon: html },
+    { name: "Sass", icon: sass },
   ];
   const experiences = [
     {
       works: [
-        { name: "Preven", company: "Ztech", description: "description" },
-        { name: "amsm", company: "Ztech", description: "another description" },
+        {
+          name: "PrevenX",
+          company: "ConcordiaLabs",
+          description:
+            "PrevenX is a CMMS software for asset management and maintenance. Modern management for your maintenance, all information in the cloud and centralized on a single Web and Mobile platform.",
+        },
+        {
+          name: "amsm",
+          company: "ConcordiaLabs",
+          description: "another description",
+        },
       ],
-      year: "2022",
+      year: "2022/2023",
     },
-    {
-      works: [
-        { name: "Preven", company: "Ztech", description: "description" },
-        { name: "amsm", company: "Ztech", description: "another description" },
-      ],
-      year: "2023",
-    },
+    // {
+    //   works: [
+    //     { name: "Preven", company: "Ztech", description: "description" },
+    //     { name: "amsm", company: "Ztech", description: "another description" },
+    //   ],
+    //   year: "2023",
+    // },
   ];
   return (
     <>
@@ -68,14 +86,7 @@ const Skills = () => {
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
-                    <Tooltip
-                      id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
-                      className="skills-tooltip"
-                    >
-                      {work.description}
-                    </Tooltip>
+                    <div id={work.name}>{work.description}</div>
                   </>
                 ))}
               </motion.div>

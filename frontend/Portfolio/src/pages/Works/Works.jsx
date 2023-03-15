@@ -10,8 +10,18 @@ import reactlogo from "../../images/react-logo.svg";
 const Works = () => {
   const works = [
     {
-      name: "teste",
-      title: "just a test",
+      name: "Preven",
+      title: "Maintenance App",
+      description:
+        " PrevenX is a CMMS software for asset management and maintenance.",
+      img: reactlogo,
+      projectLink: "",
+      codeLink: "",
+      tags: ["React JS", "Django"],
+    },
+    {
+      name: "AMSM",
+      title: "Gym App",
       description: " app",
       img: reactlogo,
       projectLink: "link",
@@ -57,7 +67,7 @@ const Works = () => {
       </h2>
 
       <div className="work-filter">
-        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+        {["Web App", "Mobile App", "Django", "React JS", "All"].map(
           (item, index) => (
             <div
               key={index}
@@ -101,16 +111,18 @@ const Works = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
-                <a href={work.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                    className="flex"
-                  >
-                    <AiFillGithub />
-                  </motion.div>
-                </a>
+                {work.codeLink && (
+                  <a href={work.codeLink} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.25 }}
+                      className="flex"
+                    >
+                      <AiFillGithub />
+                    </motion.div>
+                  </a>
+                )}
               </motion.div>
             </div>
 

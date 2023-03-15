@@ -4,11 +4,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(220, 220, 200);
+  background: var(--primary-color);
   border: 1px solid rgba(255, 255, 255, 0.15);
   position: fixed;
   top: 0;
-  left: 0;
+  // left: 0;
   z-index: 2;
 
   .navbar__logo {
@@ -97,13 +97,13 @@
     right: 0;
     z-index: 5;
     padding: 1rem;
-    width: 70%;
+    width: 60%;
     height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    background-color: rgba(220, 220, 200, 1);
+    background-color: var(--primary-color);
   }
   // .list {
   //   margin-top: 5rem;
