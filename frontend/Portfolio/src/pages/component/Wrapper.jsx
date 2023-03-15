@@ -15,13 +15,7 @@ const Wrapper = (Component, idName, classNames) =>
         <Social />
         <div className="wrapper flex">
           <Component />
-
-          {/* <div className="copyright">
-            <p className="p-text">@2023 ISMAEL</p>
-            <p className="p-text">All rights reserved</p>
-          </div> */}
         </div>
-        <NavigationDots active={idName} />
       </div>
     );
   };

@@ -6,22 +6,28 @@ import Wrapper from "../component/Wrapper";
 const abouts = [
   {
     title: "web Developer",
-    description: "I am a good Developer.",
+    description:
+      "I use HTML, CSS, and JavaScript to produce responsive websites and web apps",
     imgUrl: git,
   },
-  { title: "Backend", description: "I am a good Developer.", imgUrl: git },
-  { title: "Frontend", description: "I am a good Developer.", imgUrl: git },
   {
-    title: "Manager",
-    description: "I am a good Developer.",
+    title: "Backend",
+    description:
+      "I've been working with backend for about an year, most with django, creating apps, models, components and APIs",
+    imgUrl: git,
+  },
+  {
+    title: "Frontend",
+    description:
+      "I've been working with React since august/2022 creating components ",
     imgUrl: git,
   },
 ];
 
 const About = () => {
   return (
-    <>
-      <h2 id="about" className="head-text">
+    <div id="about" style={{ height: "100vh" }}>
+      <h2 className="head-text">
         <span>Good Deign is not my best</span>
       </h2>
       <div className="profiles">
@@ -43,7 +49,7 @@ const About = () => {
           </motion.div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

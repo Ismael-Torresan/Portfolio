@@ -12,7 +12,6 @@ const NavigationDots = ({ active }) => {
             style={active === i ? { backgroundColor: "#313BAC" } : {}}
           />
         ))}
-        <div>asdkçlfjklasdjfkljaçsl</div>
       </div>
     </>
   );
