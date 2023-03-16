@@ -27,7 +27,7 @@ const abouts = [
 
 const About = () => {
   return (
-    <div id="about" style={{ height: "100vh" }}>
+    <div id="about">
       <h2 className="head-text">
         <span>Good Deign is not my best</span>
       </h2>
