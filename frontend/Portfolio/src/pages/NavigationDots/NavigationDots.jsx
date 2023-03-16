@@ -1,10 +1,13 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable jsx-a11y/anchor-has-content */
+
 import React from "react";
 
 const NavigationDots = ({ active }) => {
   return (
     <>
       <div className="navigation">
-        {["home", "about", "work", "skills", "contact"].map((i) => (
+        {["home", "about", "works", "skills", "contact"].map((i) => (
           <div
             key={i}
             className="navigation-dot"

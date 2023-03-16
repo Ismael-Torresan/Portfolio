@@ -12,6 +12,7 @@ const Wrapper = (Component, idName, classNames) =>
         style={{ display: "flex", flexDirection: "column-reverse" }}
         className={`container ${classNames}`}
       >
+        {/* <NavigationDots /> */}
         <Social />
         <div className="wrapper flex">
           <Component />

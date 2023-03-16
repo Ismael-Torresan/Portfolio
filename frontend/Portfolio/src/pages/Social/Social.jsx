@@ -3,7 +3,6 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 
 const Social = () => {
-  return null;
   return (
     <div className="social">
       <div style={{ cursor: "pointer" }}>
@@ -11,9 +10,6 @@ const Social = () => {
           onClick={() => window.open("https://github.com/Ismael-Torresan")}
         />
       </div>
-      {/* <div>
-        <FaFacebookF />
-      </div> */}
       <div style={{ cursor: "pointer" }}>
         <BsLinkedin
           onClick={() =>

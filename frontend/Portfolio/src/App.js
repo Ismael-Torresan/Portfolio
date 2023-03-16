@@ -28,6 +28,7 @@ import Footer from "./pages/Footer/Footer";
 import Header from "./pages/Header/Header";
 import Skills from "./pages/Skills/Skills";
 import Works from "./pages/Works/Works";
+import Copyright from "./pages/Copyright/Copyright";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
       <Works />
       <Skills />
       <Footer />
+      <Copyright />
     </div>
   );
 };

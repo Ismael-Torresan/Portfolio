@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Footer.scss";
 import Wrapper from "../component/Wrapper";
 import MotionWrapper from "../component/MotionWrapper";
+import mail from "../../images/mail.png";
+import phone from "../../images/phone.png";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -27,14 +29,14 @@ const Footer = () => {
     <>
       <h2 className="head-text">Let's chat</h2>
       <div className="footer-cards">
-        <div className="card">
-          {/* <img src={images.email} alt="email" /> */}
+        <div className="footer-card">
+          <img src={mail} alt="email" />
           <a className="p-text" href="mailto:ismael_torresan@live.com">
             Ismael_Torresan@live.com
           </a>
         </div>
-        <div className="card">
-          {/* <img src={images.email} alt="email" /> */}
+        <div className="footer-card">
+          <img src={phone} alt="email" />
           <a className="p-text" href="tel:+55 (54) 992389595">
             +55 (54) 992389595
           </a>

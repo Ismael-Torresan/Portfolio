@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import python from "../../images/python.png";
-// import django from "../../images/django.png";
+import django from "../../images/django.png";
 import javascript from "../../images/javascript.png";
 import react from "../../images/react.png";
 import html from "../../images/html.png";
@@ -14,7 +14,7 @@ import "./Skills.scss";
 const Skills = () => {
   const skills = [
     { name: "Python", icon: python },
-    // { name: "Django", icon: django },
+    { name: "Django", icon: django },
     { name: "JavaScript", icon: javascript },
     { name: "React", icon: react },
     { name: "Html5", icon: html },
@@ -66,27 +66,26 @@ const Skills = () => {
           ))}
         </motion.div>
         <div className="skills-exp">
-          {experiences?.map((experience) => (
-            <motion.div className="skills-exp-item" key={`${experience.year}`}>
+          {experiences?.map((experience, index) => (
+            <motion.div className="skills-exp-item" key={index}>
               <div className="skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
               </div>
               <motion.div className="skills-exp-works">
-                {experience?.works?.map((work) => (
-                  <>
+                {experience?.works?.map((work, index) => (
+                  <div key={index}>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
                       className="skills-exp-work"
                       data-tip
                       data-for={work.name}
-                      key={work.name}
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
                     <div id={work.name}>{work.description}</div>
-                  </>
+                  </div>
                 ))}
               </motion.div>
             </motion.div>
