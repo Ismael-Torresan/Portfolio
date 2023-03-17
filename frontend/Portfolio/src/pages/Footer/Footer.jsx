@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { client } from "../../client";
+
 import "./Footer.scss";
 import Wrapper from "../component/Wrapper";
 import MotionWrapper from "../component/MotionWrapper";
@@ -7,7 +9,7 @@ import phone from "../../images/phone.png";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
     message: "",
   });
@@ -23,7 +25,16 @@ const Footer = () => {
 
   const handleSubmit = () => {
     setLoading(true);
-    setIsFormSubmitted(true);
+    const contact = {
+      _type: "contact",
+      name: username,
+      email: email,
+      message: message,
+    };
+    client.create(contact).then(() => {
+      setLoading(false);
+      setIsFormSubmitted(true);
+    });
   };
   return (
     <>
