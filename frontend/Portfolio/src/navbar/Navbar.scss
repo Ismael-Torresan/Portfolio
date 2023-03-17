@@ -8,7 +8,6 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   position: fixed;
   top: 0;
-  // left: 0;
   z-index: 2;
 
   .navbar__logo {
@@ -27,10 +26,6 @@
     -webkit-mask-image: url("../../public/meulogo.png");
     mask-image: url("../../public/meulogo.png");
     mask-repeat: no-repeat;
-
-    // @media screen and (min-width: 1500px) {
-    //   width: 14rem;
-    // }
   }
 
   .navbar__links {
@@ -61,7 +56,7 @@
         flex-direction: column;
         text-transform: uppercase;
         font-weight: 500;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.4s ease-in-out;
 
         &:hover {
           color: var(--secondary-color);
@@ -88,7 +83,6 @@
   justify-content: center;
   align-items: center;
   color: var(--secondary-color);
-  // margin: 0.5rem 1rem;
 
   div {
     position: fixed;
@@ -105,12 +99,8 @@
     flex-direction: column;
     background-color: var(--primary-color);
   }
-  // .list {
-  //   margin-top: 5rem;
-  // }
   ul {
     list-style: none;
-    // margin: 3rem;
     padding: 0;
     height: 100%;
     width: 100%;
@@ -126,7 +116,7 @@
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 500;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.4s ease-in-out;
         &:hover {
           color: var(--secondary-color);
         }

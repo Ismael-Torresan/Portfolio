@@ -1,3 +1,0 @@
-framer-motion 
-node sass for scss
-react icons

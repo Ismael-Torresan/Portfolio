@@ -26,7 +26,7 @@ const Works = () => {
       img: reactlogo,
       projectLink: "link",
       codeLink: "link",
-      tags: "All",
+      tags: ["React JS", "Django"],
     },
   ];
 
@@ -44,7 +44,7 @@ const Works = () => {
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
-    console.log(item);
+    // console.log(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);
 
     setTimeout(() => {
@@ -58,28 +58,24 @@ const Works = () => {
       }
     }, 500);
   };
-  console.log(filterWork);
+  // console.log(filterWork);
 
   return (
     <div id="work">
-      <h2 className="head-text">
-        My Creative <span>Portfolio</span>
-      </h2>
+      <h2 className="head-text">My Creative Portfolio</h2>
 
       <div className="work-filter">
-        {["Web App", "Mobile App", "Django", "React JS", "All"].map(
-          (item, index) => (
-            <div
-              key={index}
-              onClick={() => handleWorkFilter(item)}
-              className={`work-filter-item flex p-text ${
-                activeFilter === item ? "item-active" : ""
-              }`}
-            >
-              {item}
-            </div>
-          )
-        )}
+        {["Web App", "Django", "React JS", "All"].map((item, index) => (
+          <div
+            key={index}
+            onClick={() => handleWorkFilter(item)}
+            className={`work-filter-item flex p-text ${
+              activeFilter === item ? "item-active" : ""
+            }`}
+          >
+            {item}
+          </div>
+        ))}
       </div>
 
       <motion.div
@@ -95,7 +91,7 @@ const Works = () => {
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{
-                  duration: 0.25,
+                  duration: 0.4,
                   ease: "easeInOut",
                   staggerChildren: 0.5,
                 }}
@@ -105,7 +101,7 @@ const Works = () => {
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
+                    transition={{ duration: 0.4 }}
                     className="flex"
                   >
                     <AiFillEye />
@@ -116,7 +112,7 @@ const Works = () => {
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
                       whileHover={{ scale: [1, 0.9] }}
-                      transition={{ duration: 0.25 }}
+                      transition={{ duration: 0.4 }}
                       className="flex"
                     >
                       <AiFillGithub />

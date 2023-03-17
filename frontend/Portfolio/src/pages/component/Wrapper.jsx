@@ -1,11 +1,11 @@
 import React from "react";
-import NavigationDots from "../NavigationDots/NavigationDots";
+// import NavigationDots from "../NavigationDots/NavigationDots";
 import Social from "../Social/Social";
 
 const Wrapper = (Component, idName, classNames) =>
   function HOC() {
-    console.log(idName);
-    console.log(classNames);
+    // console.log(idName);
+    // console.log(classNames);
     return (
       <div
         id={idName}

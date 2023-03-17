@@ -6,6 +6,9 @@ import javascript from "../../images/javascript.png";
 import react from "../../images/react.png";
 import html from "../../images/html.png";
 import sass from "../../images/sass.png";
+import git from "../../images/git.png";
+import jira from "../../images/jira.svg";
+import slack from "../../images/slack.png";
 
 import MotionWrapper from "../component/MotionWrapper";
 import Wrapper from "../component/Wrapper";
@@ -19,35 +22,31 @@ const Skills = () => {
     { name: "React", icon: react },
     { name: "Html5", icon: html },
     { name: "Sass", icon: sass },
+    { name: "GitHub", icon: git },
+    { name: "jira", icon: jira },
+    { name: "slack", icon: slack },
   ];
   const experiences = [
     {
       works: [
         {
           name: "PrevenX",
-          company: "ConcordiaLabs",
+          company: "Concordia Labs",
           description:
             "PrevenX is a CMMS software for asset management and maintenance. Modern management for your maintenance, all information in the cloud and centralized on a single Web and Mobile platform.",
         },
         {
           name: "amsm",
-          company: "ConcordiaLabs",
+          company: "Concordia Labs",
           description: "another description",
         },
       ],
       year: "2022/2023",
     },
-    // {
-    //   works: [
-    //     { name: "Preven", company: "Ztech", description: "description" },
-    //     { name: "amsm", company: "Ztech", description: "another description" },
-    //   ],
-    //   year: "2023",
-    // },
   ];
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">Skills, Tools & Experiences</h2>
 
       <div className="skills-container">
         <motion.div className="skills-list">

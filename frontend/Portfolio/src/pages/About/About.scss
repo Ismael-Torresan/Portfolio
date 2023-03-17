@@ -16,29 +16,53 @@
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 2rem;
+
+  .about-item {
+    // width: 400px;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: #000;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
 }
 
 .profile-item {
-  width: 190px;
+  width: 400px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 
   img {
-    width: 250px;
+    width: 400px;
     height: 250px;
     border-radius: 15px;
     object-fit: cover;
   }
-  .picture__title {
-  }
+
   @media screen and (min-width: 2000px) {
-    width: 370px;
+    width: 800px;
     margin: 2rem 4rem;
 
     img {
-      height: 320px;
+      width: 700px;
+      height: 400px;
+    }
+  }
+
+  .work-content {
+    padding: 0.5rem;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+
+    h4 {
+      margin-top: 1rem;
+      line-height: 1.5;
     }
   }
 }

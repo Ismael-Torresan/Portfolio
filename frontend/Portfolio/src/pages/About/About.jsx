@@ -1,34 +1,15 @@
 import "./About.scss";
 import { motion } from "framer-motion";
-import git from "../../images/git.png";
 import Wrapper from "../component/Wrapper";
 import MotionWrapper from "../component/MotionWrapper";
 import git3d from "../../images/git3d.jpg";
 
 const abouts = [
   {
-    title: "web Developer",
+    title: "Full Stack Dev",
     description:
-      "my carrear as a developer started in 2022, working with backend at concordia labs,mostly with django, creating apps, models, components and APIs, at august/2022 i started with frontend using JS, react, html and sass. Pip, poetry, coreui, docker are some of the tools i've been using",
+      "My career as a developer started in 2022, working with backend at Concordia Labs, mainly with Django, creating apps, models and APIs. In August/2022 I started working with frontend using JS, React, CoreUi Html and Sass. Pip, Poetry, and docker are some of the tools I've been using.",
     imgUrl: git3d,
-  },
-  {
-    title: "web Developer",
-    description:
-      "I use HTML, CSS, and JavaScript to produce responsive websites and web apps",
-    imgUrl: git,
-  },
-  {
-    title: "Backend",
-    description:
-      "I've been working with backend for about an year, mostly with django, creating apps, models, components and APIs",
-    imgUrl: git,
-  },
-  {
-    title: "Frontend",
-    description:
-      "I've been working with React since august/2022 creating components",
-    imgUrl: git,
   },
 ];
 
@@ -36,7 +17,7 @@ const About = () => {
   return (
     <div id="about">
       <h2 className="head-text">
-        <span>Good Deign is not my best</span>
+        <p>Good Code Means Good Business</p>
       </h2>
       <div className="profiles">
         {abouts.map((about) => (
@@ -47,13 +28,13 @@ const About = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: "tween" }}
           >
-            <picture>
+            <div className="about-item">
               <img src={about.imgUrl} alt={about.title} />
-              <figcaption className="bold-text ">
-                <b>{about.title}</b>
-              </figcaption>
+              <div className="work-content flex ">
+                <h4>{about.title}</h4>
+              </div>
               <figcaption className="p-text">{about.description}</figcaption>
-            </picture>
+            </div>
           </motion.div>
         ))}
       </div>

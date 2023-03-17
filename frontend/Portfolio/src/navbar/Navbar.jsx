@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { motion } from "framer-motion";
-// import name from "../images/name.png";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -10,7 +9,6 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar__logo">
         <div className="meu_logo"></div>
-        {/* <img src={name} alt="logo" /> */}
       </div>
 
       <ul className="navbar__links">
