@@ -31,8 +31,8 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
             <motion.div
-              whileInView={{ x: [300, 0] }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              whileInView={{ x: [200, 0] }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <section className="list">
                 <ul>

@@ -42,21 +42,18 @@
       height: 300px;
     }
   }
-  // @media screen and (min-width: 1200px) {
-  //   width: 600px;
-  //   margin: 2rem 4rem;
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    margin: 2rem 4rem;
 
-  //   img {
-  //     width: 550px;
-  //     height: 300px;
-  //   }
-  // }
+    img {
+      width: 550px;
+      height: 300px;
+    }
+  }
 }
 
 .profile-item {
-  width: 400px;
-  padding: 1rem;
-  margin: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
