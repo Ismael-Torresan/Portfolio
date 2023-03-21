@@ -6,9 +6,18 @@ import MotionWrapper from "../component/MotionWrapper";
 import Wrapper from "../component/Wrapper";
 import "./Works.scss";
 import reactlogo from "../../images/react-logo.svg";
+import portfolio from "../../images/portfolio.png";
 
 const Works = () => {
   const works = [
+    {
+      name: "Portfolio",
+      title: "My portfolio",
+      description: "My Portfolio build with React JS and Scss",
+      img: portfolio,
+      codeLink: "https://github.com/Ismael-Torresan/Portfolio",
+      tags: ["React JS", "Web"],
+    },
     {
       name: "Preven",
       title: "Maintenance App",
@@ -24,8 +33,8 @@ const Works = () => {
       title: "Gym App",
       description: " app",
       img: reactlogo,
-      projectLink: "link",
-      codeLink: "link",
+      projectLink: "",
+      codeLink: "",
       tags: ["React JS", "Django"],
     },
   ];
@@ -62,10 +71,10 @@ const Works = () => {
 
   return (
     <div id="work">
-      <h2 className="head-text">My Creative Portfolio</h2>
+      <h2 className="head-text">Projects i have been involved</h2>
 
       <div className="work-filter">
-        {["Web App", "Django", "React JS", "All"].map((item, index) => (
+        {["Web", "Django", "React JS", "All"].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -97,16 +106,18 @@ const Works = () => {
                 }}
                 className="work-hover flex"
               >
-                <a href={work.projectLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.4 }}
-                    className="flex"
-                  >
-                    <AiFillEye />
-                  </motion.div>
-                </a>
+                {work.projectLink && (
+                  <a href={work.projectLink} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.4 }}
+                      className="flex"
+                    >
+                      <AiFillEye />
+                    </motion.div>
+                  </a>
+                )}
                 {work.codeLink && (
                   <a href={work.codeLink} target="_blank" rel="noreferrer">
                     <motion.div
