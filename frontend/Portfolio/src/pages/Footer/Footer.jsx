@@ -6,6 +6,7 @@ import Wrapper from "../component/Wrapper";
 import MotionWrapper from "../component/MotionWrapper";
 import mail from "../../images/mail.png";
 import phone from "../../images/phone.png";
+import Social from "../Social/Social";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +39,9 @@ const Footer = () => {
   };
   return (
     <>
-      <h2 className="head-text">Let's chat</h2>
+      <h2 style={{ marginTop: "1rem" }} className="head-text">
+        Let's chat
+      </h2>
       <div className="footer-cards">
         <div className="footer-card">
           <img src={mail} alt="email" />

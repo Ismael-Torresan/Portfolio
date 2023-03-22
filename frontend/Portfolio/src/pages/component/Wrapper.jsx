@@ -13,7 +13,7 @@ const Wrapper = (Component, idName, classNames) =>
         className={`container ${classNames}`}
       >
         {/* <NavigationDots /> */}
-        <Social />
+        {/* <Social /> */}
         <div className="wrapper flex">
           <Component />
         </div>

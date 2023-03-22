@@ -100,6 +100,9 @@
 }
 
 .social {
+  position: fixed;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -107,8 +110,8 @@
   padding: 1rem;
 
   div {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color: var(--white-color);
     margin: 0.25rem 0;
@@ -121,8 +124,8 @@
     transition: all 0.4s ease-in-out;
 
     svg {
-      width: 15px;
-      height: 15px;
+      width: 21px;
+      height: 21px;
       color: var(--gray-color);
     }
 

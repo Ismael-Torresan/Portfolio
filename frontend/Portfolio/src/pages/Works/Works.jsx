@@ -73,7 +73,9 @@ const Works = () => {
 
   return (
     <div id="work">
-      <h2 className="head-text">Projects i have been involved</h2>
+      <h2 style={{ marginTop: 0 }} className="head-text">
+        <p>Projects i have been involved</p>
+      </h2>
 
       <div className="work-filter">
         {["Web", "Django", "React JS", "All"].map((item, index) => (
