@@ -26,6 +26,12 @@
     -webkit-mask-image: url("../../public/meulogo.png");
     mask-image: url("../../public/meulogo.png");
     mask-repeat: no-repeat;
+
+    @media screen and (max-width: 400px) {
+      width: 20rem;
+      height: 12rem;
+      margin: -75px;
+    }
   }
 
   .navbar__links {

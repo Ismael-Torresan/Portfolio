@@ -178,6 +178,21 @@
 .header-img {
   flex: 1;
   height: 100%;
+  .overlay_circle,
+  img {
+    transition: scale 0.3s ease-in-out;
+    transition-property: transform;
+  }
+  &:hover {
+    .overlay_circle {
+      transform: scale(1.1) !important;
+      transition-delay: 100ms;
+    }
+
+    img {
+      transform: scale(1.1);
+    }
+  }
 
   display: flex;
   justify-content: center;
