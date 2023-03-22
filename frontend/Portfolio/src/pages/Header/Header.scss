@@ -130,19 +130,19 @@
   }
 
   div:nth-child(1) {
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
   }
 
   div:nth-child(2) {
-    margin: 1.75rem;
-    width: 150px;
-    height: 150px;
+    margin: 1.2rem;
+    width: 140px;
+    height: 140px;
   }
 
   div:nth-child(3) {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
   }
 
   @media screen and (min-width: 2000px) {
@@ -167,10 +167,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 0;
+    width: max-content;
 
-    div {
-      margin: 1rem;
-    }
+    // div {
+    //   margin: 1rem;
+    // }
   }
 }
 

@@ -29,26 +29,15 @@
     border-radius: 0.5rem;
     background-color: var(--primary-color);
     color: #000;
-    cursor: pointer;
     transition: all 0.4s ease;
+    max-width: 424px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 600px;
     margin: 2rem 4rem;
 
     img {
-      width: 550px;
-      height: 300px;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    width: 600px;
-    margin: 2rem 4rem;
-
-    img {
-      width: 550px;
-      height: 300px;
+      max-width: 424px;
     }
   }
 }
@@ -61,7 +50,6 @@
 
   img {
     width: 100%;
-
     border-radius: 15px;
     object-fit: cover;
   }

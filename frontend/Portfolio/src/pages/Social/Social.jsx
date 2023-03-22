@@ -12,9 +12,7 @@ const Social = () => {
       <div style={{ cursor: "pointer" }}>
         <BsLinkedin
           onClick={() =>
-            window.open(
-              "https://www.linkedin.com/in/ismael-torresan-a68206243/"
-            )
+            window.open("https://www.linkedin.com/in/Ismael-Torresan/")
           }
         />
       </div>

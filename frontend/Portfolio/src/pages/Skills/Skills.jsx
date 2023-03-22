@@ -36,7 +36,7 @@ const Skills = () => {
             "PrevenX is a CMMS software for asset management and maintenance. Modern management for your maintenance, all information in the cloud and centralized on a single Web and Mobile platform.",
         },
         {
-          name: "amsm",
+          name: "Amsm",
           company: "Concordia Labs",
           description: "another description",
         },
@@ -72,7 +72,7 @@ const Skills = () => {
               </div>
               <motion.div className="skills-exp-works">
                 {experience?.works?.map((work, index) => (
-                  <div key={index}>
+                  <div className="work-separator" key={index}>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
@@ -80,8 +80,8 @@ const Skills = () => {
                       data-tip
                       data-for={work.name}
                     >
-                      <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
+                      <h4 className="bold-text">Name: {work.name}</h4>
+                      <p className="p-text">Company: {work.company}</p>
                     </motion.div>
                     <div id={work.name}>{work.description}</div>
                   </div>
