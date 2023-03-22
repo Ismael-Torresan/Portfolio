@@ -6,7 +6,6 @@ import Wrapper from "../component/Wrapper";
 import MotionWrapper from "../component/MotionWrapper";
 import mail from "../../images/mail.png";
 import phone from "../../images/phone.png";
-import Social from "../Social/Social";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
