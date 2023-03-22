@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import MotionWrapper from "../component/MotionWrapper";
 import Wrapper from "../component/Wrapper";
 import "./Works.scss";
-import reactlogo from "../../images/react-logo.svg";
 import portfolio from "../../images/portfolio.png";
 import preven from "../../images/preven.png";
 import hall from "../../images/hall.png";
