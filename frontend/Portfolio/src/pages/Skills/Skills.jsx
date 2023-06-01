@@ -60,7 +60,7 @@ const Skills = () => {
               key={skill.name}
             >
               <div className="flex primarybg">
-                <img width={"100  px"} src={skill.icon} alt={skill.name} />
+                <img src={skill.icon} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>
