@@ -9,6 +9,7 @@ import sass from "../../images/sass.png";
 import git from "../../images/git.png";
 import jira from "../../images/jira.svg";
 import slack from "../../images/slack.png";
+import nextjs from "../../images/nextjs.png";
 
 import MotionWrapper from "../component/MotionWrapper";
 import Wrapper from "../component/Wrapper";
@@ -20,11 +21,12 @@ const Skills = () => {
     { name: "Django", icon: django },
     { name: "JavaScript", icon: javascript },
     { name: "React", icon: react },
+    { name: "NextJs", icon: nextjs },
     { name: "Html5", icon: html },
     { name: "Sass", icon: sass },
     { name: "GitHub", icon: git },
-    { name: "jira", icon: jira },
-    { name: "slack", icon: slack },
+    { name: "Jira", icon: jira },
+    { name: "Slack", icon: slack },
   ];
   const experiences = [
     {
@@ -58,7 +60,7 @@ const Skills = () => {
               key={skill.name}
             >
               <div className="flex primarybg">
-                <img src={skill.icon} alt={skill.name} />
+                <img width={"100  px"} src={skill.icon} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>
