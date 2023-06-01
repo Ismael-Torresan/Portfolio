@@ -8,6 +8,7 @@ import Header from "./pages/Header/Header";
 import Skills from "./pages/Skills/Skills";
 import Works from "./pages/Works/Works";
 import Copyright from "./pages/Copyright/Copyright";
+import Social from "./pages/Social/Social";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Skills />
       <Footer />
       <Copyright />
+      <Social />
     </div>
   );
 };

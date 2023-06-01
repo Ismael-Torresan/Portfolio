@@ -32,15 +32,16 @@ const Skills = () => {
     {
       works: [
         {
-          name: "PrevenX",
+          name: "Preven",
           company: "Concordia Labs",
           description:
-            "PrevenX is a CMMS software for asset management and maintenance. Modern management for your maintenance, all information in the cloud and centralized on a single Web and Mobile platform.",
+            "Preven is a CMMS software for asset management and maintenance. Modern management for your maintenance, all information in the cloud and centralized on a single Web and Mobile platform.",
         },
         {
-          name: "Amsm",
+          name: "Hall",
           company: "Concordia Labs",
-          description: "another description",
+          description:
+            "Hall is a management SaaS for sport clubs, gyms, and personal trainers. The platform handles workouts, activity classes, finances, banking sync, physical access control, among other features. ",
         },
       ],
       year: "2022/2023",

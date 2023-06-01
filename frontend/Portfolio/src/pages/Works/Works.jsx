@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import MotionWrapper from "../component/MotionWrapper";
 import Wrapper from "../component/Wrapper";
 import "./Works.scss";
-import reactlogo from "../../images/react-logo.svg";
 import portfolio from "../../images/portfolio.png";
+import preven from "../../images/preven.png";
+import hall from "../../images/hall.png";
 
 const Works = () => {
   const works = [
@@ -23,16 +24,17 @@ const Works = () => {
       title: "Maintenance App",
       description:
         " PrevenX is a CMMS software for asset management and maintenance.",
-      img: reactlogo,
-      projectLink: "",
+      img: preven,
+      projectLink: "https://landing.prevenx.com/",
       codeLink: "",
       tags: ["React JS", "Django"],
     },
     {
-      name: "AMSM",
-      title: "Gym App",
-      description: " app",
-      img: reactlogo,
+      name: "Hall",
+      title: "Sport Club App",
+      description:
+        " Management SaaS for sport clubs, gyms, and personal trainers.",
+      img: hall,
       projectLink: "",
       codeLink: "",
       tags: ["React JS", "Django"],
@@ -71,7 +73,9 @@ const Works = () => {
 
   return (
     <div id="work">
-      <h2 className="head-text">Projects i have been involved</h2>
+      <h2 style={{ marginTop: 0 }} className="head-text">
+        <p>Projects i have been involved</p>
+      </h2>
 
       <div className="work-filter">
         {["Web", "Django", "React JS", "All"].map((item, index) => (
@@ -95,7 +99,11 @@ const Works = () => {
         {(filterWork || []).map((work, index) => (
           <div className="work-item flex" key={index}>
             <div className="work-img flex">
-              <img src={work.img} alt={work.name} />
+              <img
+                style={{ background: "#edf2f8" }}
+                src={work.img}
+                alt={work.name}
+              />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
@@ -140,7 +148,9 @@ const Works = () => {
               </p>
 
               <div className="work-tag flex">
-                <p className="p-text">{work?.tags}</p>
+                <p className="p-text">
+                  {work?.tags === 1 ? work.tags : work.tags.join(" - ")}
+                </p>
               </div>
             </div>
           </div>

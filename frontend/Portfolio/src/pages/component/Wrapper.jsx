@@ -1,6 +1,6 @@
 import React from "react";
 // import NavigationDots from "../NavigationDots/NavigationDots";
-import Social from "../Social/Social";
+// import Social from "../Social/Social";
 
 const Wrapper = (Component, idName, classNames) =>
   function HOC() {
@@ -13,7 +13,7 @@ const Wrapper = (Component, idName, classNames) =>
         className={`container ${classNames}`}
       >
         {/* <NavigationDots /> */}
-        <Social />
+        {/* <Social /> */}
         <div className="wrapper flex">
           <Component />
         </div>

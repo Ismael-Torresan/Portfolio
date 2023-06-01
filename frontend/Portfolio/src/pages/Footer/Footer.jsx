@@ -38,7 +38,9 @@ const Footer = () => {
   };
   return (
     <>
-      <h2 className="head-text">Let's chat</h2>
+      <h2 style={{ marginTop: "1rem" }} className="head-text">
+        Let's chat
+      </h2>
       <div className="footer-cards">
         <div className="footer-card">
           <img src={mail} alt="email" />
