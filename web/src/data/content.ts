@@ -175,15 +175,6 @@ export const projects: Project[] = [
     image: "/images/agronix.png",
     tags: ["Next.js", "Node.js", "Android", "WebSockets"],
   },
-  {
-    name: "Portfolio",
-    title: "This Website",
-    description:
-      "The site you're looking at — rebuilt from the ground up with Next.js, TypeScript, Tailwind CSS and Framer Motion. Dark/light theme, scroll animations, statically exported and deployed to GitHub Pages.",
-    image: "/images/portfolio.png",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    codeUrl: "https://github.com/Ismael-Torresan/Portfolio",
-  },
 ];
 
 export const navLinks = [
